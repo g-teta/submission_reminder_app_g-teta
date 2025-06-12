@@ -84,7 +84,8 @@ cat > "$app_dir/scripts/startup.sh" <<'EOF'
 #Load config 
 source "$(dirname "$0")/../config/config.env"
 # Run the reminder script
-bash "$(dirname "$0")/reminder.sh
+bash "$(dirname "$0")
+./reminder.sh
 EOF
 
 #Make all .sh executable 
@@ -93,4 +94,3 @@ chmod +x "$app_dir/scripts/"*.sh
 echo "Environment created successfully in $app_dir"
 echo "To start the application, run: bash
 $app_dir/scripts/startup.sh"
-
