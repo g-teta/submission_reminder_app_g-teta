@@ -100,5 +100,5 @@ EOF
 chmod +x "$baseDir/startup.sh"
 chmod +x "$baseDir/app/"*.sh
 
-echo "Environment setup complete in directory: $baseDir"
+echo "$baseDir has been created"
 
